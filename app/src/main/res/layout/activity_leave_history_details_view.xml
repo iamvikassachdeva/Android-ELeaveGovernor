@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sachdeva.eleavegovernor.LeaveHistoryDetailsView">
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="385dp"
+        android:layout_height="65dp"
+        android:text=" Leave View"
+        android:textSize="28sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorWhite"
+        android:textStyle="italic"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/txLVEmpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Id : "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/display"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/flLVEmpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/display"
+        app:layout_constraintLeft_toRightOf="@+id/txLVEmpId" />
+
+    <TextView
+        android:id="@+id/txLVEmpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txLVEmpId"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flLVEmpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flLVEmpId"
+        app:layout_constraintLeft_toRightOf="@+id/txLVEmpName" />
+    <TextView
+        android:id="@+id/txLVLeaveCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Category : "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txLVEmpName"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flLVLeaveCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flLVEmpName"
+        app:layout_constraintLeft_toRightOf="@+id/txLVLeaveCategory" />
+    <TextView
+        android:id="@+id/txLVLeaveType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Type : "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txLVLeaveCategory"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flLVLeaveType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flLVLeaveCategory"
+        app:layout_constraintLeft_toRightOf="@+id/txLVLeaveType" />
+    <TextView
+        android:id="@+id/txLVDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txLVLeaveType"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flLVDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flLVLeaveType"
+        app:layout_constraintLeft_toRightOf="@+id/txLVDate" />
+    <TextView
+        android:id="@+id/txLVLeaveStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Status : "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txLVDate"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flLVLeaveStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flLVDate"
+        app:layout_constraintLeft_toRightOf="@+id/txLVLeaveStatus" />
+    <TextView
+        android:id="@+id/txLVStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Status : "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txLVLeaveStatus"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flLVStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flLVLeaveStatus"
+        app:layout_constraintLeft_toRightOf="@+id/txLVStatus" />
+    <TextView
+        android:id="@+id/txLVDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description : "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txLVStatus"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flLVDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flLVStatus"
+        app:layout_constraintLeft_toRightOf="@+id/txLVDescription" />
+    <TextView
+        android:id="@+id/txAdjustments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjustments: "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txLVDescription"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flLVAdjustments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/txAdjustments"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button1"
+        android:onClick="close"
+        android:text="OK"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flLVAdjustments"
+        app:layout_constraintVertical_bias="0.86" />
+
+</android.support.constraint.ConstraintLayout>

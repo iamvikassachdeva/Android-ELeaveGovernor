@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ELeaveGovernor</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ip_address">10.0.2.2</string>
+    <string-array name="type">
+        <item>Full Day</item>
+        <item>Half Day</item>
+    </string-array>
+    <string-array name="selectday">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+    <string-array name="selectdepartment">
+        <item>CE</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>ME</item>
+    </string-array>
+    <string-array name="selectdesignation">
+        <item>Assistant Professor</item>
+        <item>Head of Department</item>
+        <item>Lab Assistant</item>
+    </string-array>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sachdeva.eleavegovernor.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="315dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="55dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="Admin Sign In !!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Enter User Id"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:layout_marginTop="149dp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:layout_below="@+id/editUserName"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editUserName"
+        app:layout_constraintHorizontal_bias="0.508"
+        android:layout_marginTop="76dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/button1"
+        android:fontFamily="monospace"
+        android:onClick="OnLogin"
+        android:text="Login"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

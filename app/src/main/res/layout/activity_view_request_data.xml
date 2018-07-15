@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sachdeva.eleavegovernor.ViewRequestData">
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="385dp"
+        android:layout_height="65dp"
+        android:text=" Request View"
+        android:textSize="28sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorWhite"
+        android:textStyle="italic"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/txRVRequestingFaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Requesting Faculty : "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/display"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/flRVRequestingFaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/display"
+        app:layout_constraintLeft_toRightOf="@+id/txRVRequestingFaculty" />
+
+    <TextView
+        android:id="@+id/txRVAssignedFaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assigned Faculty : "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txRVRequestingFaculty"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flRVAssignedFaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flRVRequestingFaculty"
+        app:layout_constraintLeft_toRightOf="@+id/txRVAssignedFaculty" />
+    <TextView
+        android:id="@+id/txRVDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department : "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txRVAssignedFaculty"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flRVDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flRVAssignedFaculty"
+        app:layout_constraintLeft_toRightOf="@+id/txRVDepartment" />
+    <TextView
+        android:id="@+id/txRVDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txRVDepartment"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flRVDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flRVDepartment"
+        app:layout_constraintLeft_toRightOf="@+id/txRVDate" />
+    <TextView
+        android:id="@+id/txRVLectureNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LectureNo : "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txRVDate"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/flRVLectureNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/flRVDate"
+        app:layout_constraintLeft_toRightOf="@+id/txRVLectureNo" />
+    <Button
+        android:id="@+id/Approve"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/button1"
+        android:onClick="approveRequest"
+        android:text="Approve"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Button
+        android:id="@+id/Reject"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/button1"
+        android:onClick="rejectRequest"
+        android:text="Reject"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/Approve"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

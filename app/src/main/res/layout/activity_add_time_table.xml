@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sachdeva.eleavegovernor.AddTimeTable">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:background="@color/black"
+        android:textColor="@color/colorWhite"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:text=" Add Time Table"
+        android:textStyle="italic"
+        android:textSize="28sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <CheckBox
+        android:id="@+id/lecture1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="54dp"
+        android:onClick="lec1Checked"
+        android:text="Lecture 1st"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <CheckBox
+        android:id="@+id/lecture2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="lec2Checked"
+        android:text="Lecture 2nd"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture1" />
+
+    <CheckBox
+        android:id="@+id/lecture3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="lec3Checked"
+        android:text="Lecture 3rd"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture2" />
+
+    <CheckBox
+        android:id="@+id/lecture4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="lec4Checked"
+        android:text="Lecture 4th"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture3" />
+
+    <CheckBox
+        android:id="@+id/lecture5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="lec5Checked"
+        android:text="Lecture 5th"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture4" />
+
+    <CheckBox
+        android:id="@+id/lecture6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="lec6Checked"
+        android:text="Lecture 6th"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture5" />
+
+    <CheckBox
+        android:id="@+id/lecture7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="lec7Checked"
+        android:text="Lecture 7th"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture6" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="135dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/button1"
+        android:onClick="onSubmit"
+        android:text="OK"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

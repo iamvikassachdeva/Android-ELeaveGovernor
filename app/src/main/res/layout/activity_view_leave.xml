@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123455"
+    tools:context="com.example.sachdeva.eleavegovernor.ViewLeave">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="383dp"
+        android:layout_height="65dp"
+        android:text="  Remaining Leaves"
+        android:background="#000000"
+        android:textSize="28sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="italic"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vpEmpId"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="73dp"
+        android:gravity="center_vertical"
+        android:text="Employee Id            :"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/vpEmpName"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="Casual Leaves        : "
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpEmpId" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="Medical Leaves      : "
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpEmpName" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="Earned Leaves        : "
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/empID"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="73dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginLeft="229dp" />
+
+    <TextView
+        android:id="@+id/empName"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/empID"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/empDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/empName"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/elVL"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="43dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/empDOB" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="156dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/button3"
+        android:onClick="dismiss"
+        android:text="OK"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="Academic Leave     :"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <TextView
+        android:id="@+id/alVL"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="47dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elVL" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="WithoutPay Leaves :"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <TextView
+        android:id="@+id/wplVL"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/alVL" />
+
+</android.support.constraint.ConstraintLayout>

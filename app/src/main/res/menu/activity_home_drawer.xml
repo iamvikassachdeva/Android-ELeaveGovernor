@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="View Profile" />
+        <item
+            android:id="@+id/navNotificationView"
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:title="Leave Notification" />
+        <item
+            android:id="@+id/nav_History"
+            android:icon="@android:drawable/checkbox_on_background"
+            android:title="Leave History" />
+        <item
+            android:id="@+id/navMarkAttendenceView"
+            android:icon="@drawable/ic_fingerprint"
+            android:title="Mark Attendance" />
+        <item
+            android:id="@+id/nav_viewPendingLeaves"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Remaining Leaves" />
+
+    </group>
+    <group>
+        <item
+            android:title="Lecture Requests">
+            <menu>
+                <item
+                    android:id="@+id/nav_viewMyRequests"
+                    android:title="Requests Raised by Me"></item>
+                <item
+                    android:id="@+id/nav_viewRequests"
+                    android:title="Requests Pending For my Approval" ></item>
+            </menu>
+        </item>
+
+    </group>
+
+
+</menu>

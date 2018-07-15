@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123455"
+    tools:context="com.example.sachdeva.eleavegovernor.ViewProfile"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="383dp"
+        android:layout_height="65dp"
+        android:text="  User Profile"
+        android:background="#000000"
+        android:textSize="28sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="italic"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vpEmpId"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:textAlignment="textEnd"
+        android:text="Employee Id : "
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="124dp" />
+
+    <TextView
+        android:id="@+id/vpEmpName"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:text="Employee Name : "
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpEmpId"
+        tools:layout_editor_absoluteY="161dp"
+        tools:layout_editor_absoluteX="57dp" />
+
+    <TextView
+        android:id="@+id/vpEmail"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:text="Email : "
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpDepartment"
+        tools:layout_editor_absoluteY="342dp"
+        tools:layout_editor_absoluteX="57dp" />
+
+    <TextView
+        android:id="@+id/empID"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="124dp"
+        app:layout_constraintLeft_toRightOf="@+id/vpEmpId"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="13dp" />
+
+    <TextView
+        android:id="@+id/empName"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintLeft_toRightOf="@+id/vpEmpName"
+        app:layout_constraintTop_toBottomOf="@+id/empID" />
+
+    <TextView
+        android:id="@+id/empEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintLeft_toRightOf="@+id/vpEmail"
+        app:layout_constraintTop_toBottomOf="@+id/empDept" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="156dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button3"
+        android:onClick="clickOK"
+        android:text="OK"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="425dp" />
+
+    <TextView
+        android:id="@+id/vpGender"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:text="Gender : "
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpEmpName"
+        tools:layout_editor_absoluteY="206dp"
+        tools:layout_editor_absoluteX="57dp" />
+
+    <TextView
+        android:id="@+id/empGender"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintLeft_toRightOf="@+id/vpGender"
+        app:layout_constraintTop_toBottomOf="@+id/empName" />
+
+    <TextView
+        android:id="@+id/vpDepartment"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:text="Department : "
+        android:textAlignment="textEnd"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/vpGender" />
+
+    <TextView
+        android:id="@+id/empDept"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_marginLeft="13dp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toRightOf="@+id/vpDepartment"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/empGender" />
+</android.support.constraint.ConstraintLayout>

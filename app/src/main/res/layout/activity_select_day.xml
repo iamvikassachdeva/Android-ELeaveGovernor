@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sachdeva.eleavegovernor.SelectDay">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:background="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:text="  Day of Week"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/selectDay"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="342dp"
+        android:background="@drawable/back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/Empid"
+        android:background="@drawable/back"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Employee Id: "
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="71dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Day of Week : "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="129dp"
+        app:layout_constraintTop_toBottomOf="@+id/Empid"
+        android:layout_marginLeft="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="42dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:background="@drawable/button1"
+        android:layout_width="135dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="58dp"
+        android:onClick="addTable"
+        android:text="OK"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <Spinner
+        android:id="@+id/selectDepartment"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Empid" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Department : "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/Empid" />
+</android.support.constraint.ConstraintLayout>
